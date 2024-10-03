@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head><style>
+        /* Method 1: Floating Images */
+        .float-left {
+            float: left;
+            margin-right: 10px;
+        }
+        .float-right {
+            float: right;
+            margin-left: 10px;
+        }
+        
+        /* Method 2: Flexbox */
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        /* Method 3: Positioning */
+        .relative-container {
+            position: relative;
+        }
+        .absolute-image {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+    </style></head>
+<body>
+<h1>Hello World</h1>
+<p>I'm hosted with GitHub Pages.</p>
+<div class="flex-container">
+    <img src="C:\Users\tarik\Documents\GitHub\becool75.github.io\pic\DSC_7129.jpg" alt="Image 3" width="350">
+    <img src="C:\Users\tarik\Documents\GitHub\becool75.github.io\pic\DSC_7042.jpg" alt="Image 4" width="350">
+    <img src="C:\Users\tarik\Documents\GitHub\becool75.github.io\pic\DSC_6680.jpg" alt="Image 4" width="350">
+    <img src="C:\Users\tarik\Documents\GitHub\becool75.github.io\pic\DSC_7111.jpg" alt="Image 4" width="350">
+  
+</div>
+<h2>Floating Images</h2>
+    <img src="C:\Users\tarik\Documents\GitHub\becool75.github.io\pic\DSC_7064.jpg" alt="Image 1" class="float-left" width="250">
+    <img src="C:\Users\tarik\Documents\GitHub\becool75.github.io\pic\DSC_7005.jpg" alt="Image 2" class="float-right" width="350">
+    <p>This is some text that wraps around the images placed on the left and right using float.</p>
+    
+    <br clear="all">
+</body>
+</html>
