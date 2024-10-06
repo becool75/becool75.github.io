@@ -10,7 +10,7 @@ h1 {
 }
 
 img {
-    border-radius: 50%; /* Runde Kanten für Bilder */
+    border-radius: 10%; /* Runde Kanten für Bilder */
     border: 2px solid #333; /* Rahmen um das Bild */
 }
 
