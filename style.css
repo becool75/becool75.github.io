@@ -1,1 +1,16 @@
+/* Das ist meine CSS-File */
+body {
+    background-color: #f0f0f0; /* Hintergrundfarbe */
+    font-family: Arial, sans-serif; /* Schriftart */
+}
+
+h1 {
+    color: #333; /* Farbe der Überschrift */
+    text-align: center; /* Text zentrieren */
+}
+
+img {
+    border-radius: 50%; /* Runde Kanten für Bilder */
+    border: 2px solid #333; /* Rahmen um das Bild */
+}
 
