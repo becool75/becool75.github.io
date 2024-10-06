@@ -1,16 +1,89 @@
-/* Das ist meine CSS-File */
+/* Grundfarben und Stile definieren */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --font-color: #333;
+    --background-color: #f4f4f4;
+    --font-family: 'Arial', sans-serif;
+}
+
+/* Grundlegendes Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #f0f0f0; /* Hintergrundfarbe */
-    font-family: Arial, sans-serif; /* Schriftart */
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--font-color);
+    line-height: 1.6;
+}
+
+/* Überschriften */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-weight: 600;
 }
 
 h1 {
-    color: #333; /* Farbe der Überschrift */
-    text-align: center; /* Text zentrieren */
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 20px;
 }
 
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* Layout mit Flexbox */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Karten für Inhalte */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .card {
+        margin: 20px;
+    }
+}
+
+/* Bilder */
 img {
-    border-radius: 10%; /* Runde Kanten für Bilder */
-    border: 2px solid #333; /* Rahmen um das Bild */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
-
