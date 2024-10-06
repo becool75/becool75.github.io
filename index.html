@@ -1,56 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
     <head> 
-        
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Webseite</title>
-    <!-- Verknüpfung der CSS-Datei -->
-    <link rel="stylesheet" href="style.css">
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meine Webseite</title>
+        <!-- Verknüpfung der CSS-Datei -->
+        <link rel="stylesheet" href="style.css">
 
         <style>
-        /* Method 1: Floating Images */
-        .float-left {
-            float: left;
-            margin-right: 10px;
-        }
-        .float-right {
-            float: right;
-            margin-left: 10px;
-        }
-        
-        /* Method 2: Flexbox *
-        .flex-container {
-            display: flex;
-            justify-content: space-around;
-        }
-        
-        /* Method 3: Positioning */
-        .relative-container {
-            position: relative;
-        }
-        .absolute-image {
-            position: absolute;
-            top: 10px;
-            left: 20px;
-        }
-    </style>
-        
-      </head>
+            /* Method 1: Floating Images */
+            .float-left {
+                float: left;
+                margin-right: 10px;
+            }
+            .float-right {
+                float: right;
+                margin-left: 10px;
+            }
+            
+            /* Method 2: Flexbox */
+            .flex-container {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap; /* Bilder umbrechen, wenn Platz nicht ausreicht */
+            }
+            
+            /* Method 3: Positioning */
+            .relative-container {
+                position: relative;
+            }
+            .absolute-image {
+                position: absolute;
+                top: 10px;
+                left: 20px;
+            }
+        </style>
+    </head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<div class="flex-container">
-    <img src="\pic\DSC_7129.jpg" alt="Image 3" width="350">
-    <img src="\pic\DSC_7042.jpg" alt="Image 4" width="350">
-    <img src="\pic\DSC_6680.jpg" alt="Image 4" width="350">
-    <img src="\pic\DSC_7111.jpg" alt="Image 4" width="350">
-  
-</div>
-<h2>Floating Images</h2>
-    <img src="\pic\DSC_7064.jpg" alt="Image 1" class="float-left" width="250">
-    <img src="\pic\DSC_7005.jpg" alt="Image 2" class="float-right" width="350">
+    <h1>Hello World</h1>
+    <p>I'm hosted with GitHub Pages.</p>
+
+    <!-- Flexbox für Bildanordnung -->
+    <div class="flex-container">
+        <img src="pic/DSC_7129.jpg" alt="Image 3" width="350">
+        <img src="pic/DSC_7042.jpg" alt="Image 4" width="350">
+        <img src="pic/DSC_6680.jpg" alt="Image 5" width="350">
+        <img src="pic/DSC_7111.jpg" alt="Image 6" width="350">
+    </div>
+
+    <!-- Floating Images -->
+    <h2>Floating Images</h2>
+    <img src="pic/DSC_7064.jpg" alt="Image 1" class="float-left" width="250">
+    <img src="pic/DSC_7005.jpg" alt="Image 2" class="float-right" width="350">
+    
     <p>This is some text that wraps around the images placed on the left and right using float.</p>
     
     <br clear="all">
