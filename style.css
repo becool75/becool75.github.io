@@ -40,6 +40,7 @@ p {
 .flex-container {
     display: flex;
     justify-content: center; /* Mittige Ausrichtung */
+    align-items: center; /* Vertikal zentriert, falls notwendig */
     gap: 20px; /* Mehr Abstand zwischen den Bildern */
     flex-wrap: wrap;
     margin: 20px 0;
