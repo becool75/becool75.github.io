@@ -75,3 +75,14 @@ button:hover {
     transform: scale(1.1);
     transition: all 0.3s ease;
 }
+
+@media screen and (max-width: 600px) {
+    .flex-container img {
+        width: 100%; /* Bilder füllen den Bildschirm auf kleineren Geräten */
+    }
+
+    nav ul li {
+        float: none;
+        width: 100%;
+    }
+}
