@@ -3,83 +3,114 @@
     <head> 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Meine Webseite oh, dieser text ist am falschen ort. :-) </title>
+        <title>Meine Professionelle Webseite</title>
         <!-- Verknüpfung der CSS-Datei -->
         <link rel="stylesheet" href="style.css">
 
         <style>
-            /* Method 1: Floating Images */
-            .float-left {
-                float: left;
-                margin-right: 10px;
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+                color: #333;
             }
-            .float-right {
-                float: right;
-                margin-left: 10px;
+
+            header {
+                background-color: #4CAF50;
+                color: white;
+                text-align: center;
+                padding: 1rem;
+                font-size: 2rem;
+                box-shadow: 0 4px 2px -2px gray;
             }
-            
-            /* Method 2: Flexbox */
+
+            h1, h2 {
+                font-family: 'Arial', sans-serif;
+                text-align: center;
+                margin: 1rem 0;
+            }
+
+            .content {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: white;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            p {
+                font-size: 1.1rem;
+                line-height: 1.6;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+
             .flex-container {
                 display: flex;
-                justify-content: space-around;
-                flex-wrap: wrap; /* Bilder umbrechen, wenn Platz nicht ausreicht */
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin: 20px 0;
             }
-            
-            /* Method 3: Positioning */
-            .relative-container {
+
+            .flex-container img {
+                max-width: 100%;
+                height: auto;
+                margin: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+            }
+
+            .flex-container img:hover {
+                transform: scale(1.05);
+            }
+
+            footer {
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 1rem 0;
                 position: relative;
-            }
-            .absolute-image {
-                position: absolute;
-                top: 10px;
-                left: 20px;
+                bottom: 0;
+                width: 100%;
             }
         </style>
     </head>
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
-<center>
+    <header>
+        <h1>Willkommen auf meiner professionellen Webseite</h1>
+    </header>
 
-
-    <br>
-    <br>
-    
-   
+    <div class="content">
+        <p>Ich bin gehostet bei GitHub Pages.</p>
         
-    <p id="ip-address">Lädt...</p>
+        <p id="ip-address">Lädt...</p>
 
-    <script>
-        // Fetch IP-Adresse von ipify API
-        fetch('https://api.ipify.org?format=json')
-            .then(response => response.json())
-            .then(data => {
-                // IP-Adresse im HTML anzeigen
-                document.getElementById('ip-address').innerText = `Deine IP-Adresse ist: ${data.ip}`;
-            })
-            .catch(error => {
-                // Fehler behandeln
-                document.getElementById('ip-address').innerText = 'Fehler beim Abrufen der IP-Adresse.';
-            });
-    </script>
-    </center>
-    <br>
-    <br>
-    <!-- Flexbox für Bildanordnung -->
-    <div class="flex-container">
-        <img src="pic/DSC_7129.jpg" alt="Image 3" width="350">
-        <img src="pic/DSC_7042.jpg" alt="Image 4" width="350">
-        <img src="pic/DSC_6680.jpg" alt="Image 5" width="350">
-        <img src="pic/DSC_7111.jpg" alt="Image 6" width="350">
+        <script>
+            // Fetch IP-Adresse von ipify API
+            fetch('https://api.ipify.org?format=json')
+                .then(response => response.json())
+                .then(data => {
+                    // IP-Adresse im HTML anzeigen
+                    document.getElementById('ip-address').innerText = `Deine IP-Adresse ist: ${data.ip}`;
+                })
+                .catch(error => {
+                    // Fehler behandeln
+                    document.getElementById('ip-address').innerText = 'Fehler beim Abrufen der IP-Adresse.';
+                });
+        </script>
+
+        <!-- Flexbox für Bildanordnung -->
+        <div class="flex-container">
+            <img src="pic/DSC_7129.jpg" alt="Image 3">
+            <img src="pic/DSC_7042.jpg" alt="Image 4">
+            <img src="pic/DSC_6680.jpg" alt="Image 5">
+            <img src="pic/DSC_7111.jpg" alt="Image 6">
+        </div>
     </div>
 
-    <!-- Floating Images -->
-    <h2>Floating Images</h2>
-    <img src="pic/DSC_7064.jpg" alt="Image 1" class="float-left" width="250">
-    <img src="pic/DSC_7005.jpg" alt="Image 2" class="float-right" width="350">
-    
-    <p>This is some text that wraps around the images placed on the left and right using float.</p>
-    
-    <br clear="all">
+    <footer>
+        <p>&copy; 2024 Meine Webseite. Alle Rechte vorbehalten.</p>
+    </footer>
 </body>
 </html>
