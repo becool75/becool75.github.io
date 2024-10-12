@@ -116,5 +116,18 @@
     <footer>
         <p>&copy; 2024 Meine Webseite. Alle Rechte vorbehalten.</p>
     </footer>
+
+<section id="contact">
+    <h2>Kontakt</h2>
+    <form action="/submit_form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Nachricht:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+        <input type="submit" value="Senden">
+    </form>
+</section>
 </body>
 </html>
