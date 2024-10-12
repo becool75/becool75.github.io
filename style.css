@@ -46,7 +46,7 @@ p {
 }
 
 .flex-container img {
-    max-width: 50%; /* 50% kleinere Bilder */
+    width: 175px; /* Feste Bildbreite für kleinere Bilder */
     height: auto;
     margin: 10px;
     border-radius: 10px; /* Runde Ecken bei Bildern */
