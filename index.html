@@ -40,6 +40,22 @@
     <h1>Hello World</h1>
     <p>I'm hosted with GitHub Pages.</p>
 
+<p id="ip-address">Lädt...</p>
+
+    <script>
+        // Fetch IP-Adresse von ipify API
+        fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                // IP-Adresse im HTML anzeigen
+                document.getElementById('ip-address').innerText = `Deine IP-Adresse ist: ${data.ip}`;
+            })
+            .catch(error => {
+                // Fehler behandeln
+                document.getElementById('ip-address').innerText = 'Fehler beim Abrufen der IP-Adresse.';
+            });
+    </script>
+    
     <!-- Flexbox für Bildanordnung -->
     <div class="flex-container">
         <img src="pic/DSC_7129.jpg" alt="Image 3" width="350">
